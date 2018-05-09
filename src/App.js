@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Match, Miss} from 'react-router';
+import {BrowserRouter as Router, Link, Route, Miss} from 'react-router-dom';
 import Home from './Home'
 import About from './About'
 import Topics from './Topics'
@@ -14,9 +14,9 @@ const App = () => {
           <li><Link to = "/Topics">Topics</Link></li>
         </ul>
         <hr/>
-        <Match exactly pattern='/' component={Home}/>
-        <Match pattern='/about' component={About}/>
-        <Match pattern='/topics' component={Topics}/>
+        <Route exact pattern='/' component={Home}/>
+        <Route pattern='/about' component={About}/>
+        <Route pattern='/topics' component={Topics}/>
       </div>
     </Router>
   );
