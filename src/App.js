@@ -14,9 +14,9 @@ const App = () => {
           <li><Link to = "/Topics">Topics</Link></li>
         </ul>
         <hr/>
-        <Route exact pattern='/' component={Home}/>
-        <Route pattern='/about' component={About}/>
-        <Route pattern='/topics' component={Topics}/>
+        <Route exact path='/' component={Home}/>
+        <Route path='/about' component={About}/>
+        <Route path='/topics' component={Topics}/>
       </div>
     </Router>
   );
